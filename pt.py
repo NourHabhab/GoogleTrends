@@ -210,11 +210,27 @@ if menu_id == "2":
             st.empty()
     
     
-    st.markdown(f"""
-                <h2>
-                    <h4 style="vertical-align:center;font-size:25px;color:#4285F4;padding-left:200px;padding-top:5px;margin-left:0em";>
-                    In this page, a new feature for google trends has been added! We can compare the search term in two different countries.
-                </h2>""",unsafe_allow_html = True)
+    col1,col2,col3,col4=st.columns([6,0.2,0.2,4])
+    #Summary of what the page represents 
+    with col1:
+        st.markdown(f"""
+                    <h3>
+                        <h4 style="vertical-align:center;font-size:25px;color:#4285F4;padding-left:200px;padding-top:5px;margin-left:0em";>
+                        In this page, a new feature for google trends has been added! We can compare the search term in two different countries.
+                    </h3>""",unsafe_allow_html = True)
+    #This is a dictonary representing the code of the geoloction in google trends 
+    with col4:
+        def load_lottieurl(url):
+
+                # get the url
+            r = requests.get(url)
+            # if error 200 raised return Nothing
+            if r.status_code !=200:
+                return None
+            return r.json()
+    
+        lottie_churn = load_lottieurl("https://assets8.lottiefiles.com/private_files/lf30_7n7lhyly.json")
+        st_lottie(lottie_churn, key = "churn", height = 200, width = 700)
     
     #This is a dictonary representing the code of the geoloction in google trends 
     
