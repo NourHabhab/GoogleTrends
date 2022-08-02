@@ -55,7 +55,7 @@ if menu_id == "Google":
         
     col1,col2,col3,col4,col5,col6=st.columns([1,1.3,1,1,1,1])
     with col3:
-        image1=Image.open('Capture1.png')
+        image1=Image.open('Capture1.PNG')
         st.image(image1,width=600)
         
     col1,col2,col3=st.columns([7,0.1,0.1])
