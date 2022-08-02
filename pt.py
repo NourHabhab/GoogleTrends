@@ -99,12 +99,6 @@ if menu_id == "1":
         lottie_churn = load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_dhlmjljy.json")
         st_lottie(lottie_churn, key = "churn", height = 200, width = 600)
 
-    #Summary of what the page represents 
-    st.markdown(f"""
-                <h2>
-                    <h4 style="vertical-align:center;font-size:25px;color:#4285F4;padding-left:200px;padding-top:5px;margin-left:0em";>
-                    In this page, we will explore the trend of a single keyword within a specific region over the past five years to analyze the trend and over the past year to further understand how to optimize our SEO/SEM
-                </h2>""",unsafe_allow_html = True)
     #This is a dictonary representing the code of the geoloction in google trends 
    
     countries1={'United States':"US",'United Arab Emirates':"AE","Germany":"DE","Afghanistan":"AF",
