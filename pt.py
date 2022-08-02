@@ -43,7 +43,7 @@ if menu_id == "Google":
             st.image(image,width=300)
     with row_spacer2:
             st.empty()
-    Segmenting the page for the desired layout 
+    #Segmenting the page for the desired layout 
 
     col1,col2,col3=st.columns([1,2,1])
     with col2:
