@@ -229,7 +229,7 @@ if menu_id == "2":
                 return None
             return r.json()
     
-        lottie_churn = load_lottieurl("https://assets8.lottiefiles.com/private_files/lf30_7n7lhyly.json")
+        lottie_churn = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_HLo5AP.json")
         st_lottie(lottie_churn, key = "churn", height = 200, width = 700)
     
     #This is a dictonary representing the code of the geoloction in google trends 
