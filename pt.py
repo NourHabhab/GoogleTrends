@@ -36,7 +36,7 @@ menu_id = hc.nav_bar(menu_definition = menu_data,
 
 if menu_id == "Google":
     #Installing an image 
-    image = Image.open('1.png')
+    image = Image.open('1.PNG')
 
     row_spacer1, row_1, row_spacer2, row_2 = st.columns((.1, .1, .3, 1.8))
     with row_spacer1:
@@ -60,13 +60,13 @@ if menu_id == "Google":
         
     col1,col2,col3=st.columns([7,0.1,0.1])
     with col1:
-        image1=Image.open('Capture9.png')
+        image1=Image.open('Capture9.PNG')
         st.image(image1,width=1650)
 
 #Editing Second Page of automated scrapper 
         
 if menu_id == "1":
-    image = Image.open('Capture6.png')
+    image = Image.open('Capture6.PNG')
 
     row_spacer1, row_1, row_spacer2, row_2 = st.columns((.1, .1, .3, 1.8))
     with row_spacer1:
@@ -181,7 +181,7 @@ if menu_id == "1":
 
 #Editing Third Page of automated scrapper   
 if menu_id == "2":
-    image = Image.open('Capture6.png')
+    image = Image.open('Capture6.PNG')
 
     row_spacer1, row_1, row_spacer2, row_2 = st.columns((.1, .1, .3, 1.8))
     with row_spacer1:
@@ -377,7 +377,7 @@ if menu_id == "2":
 
 #Editing Fourth Page of automated scrapper  
 if menu_id=="3": 
-    image = Image.open('Capture6.png')
+    image = Image.open('Capture6.PNG')
 
     row_spacer1, row_1, row_spacer2, row_2 = st.columns((.1, .1, .3, 1.8))
     with row_spacer1:
