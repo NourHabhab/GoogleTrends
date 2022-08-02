@@ -36,13 +36,13 @@ menu_id = hc.nav_bar(menu_definition = menu_data,
 
 if menu_id == "Google":
     #Installing an image 
-    image = Image.open('1.png')
+#     #image = Image.open('1.png')
 
-    row_spacer1, row_1, row_spacer2, row_2 = st.columns((.1, .1, .3, 1.8))
-    with row_spacer1:
-            st.image(image,width=300)
-    with row_spacer2:
-            st.empty()
+#     row_spacer1, row_1, row_spacer2, row_2 = st.columns((.1, .1, .3, 1.8))
+#     with row_spacer1:
+#             st.image(image,width=300)
+#     with row_spacer2:
+#             st.empty()
     #Segmenting the page for the desired layout 
 
     col1,col2,col3=st.columns([1,2,1])
