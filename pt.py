@@ -6,7 +6,7 @@ import plotly.express as px
 import hydralit_components as hc
 from ast import keyword
 from pytrends.request import TrendReq
-from streamlit_tags import st_tags 
+
 
 
 
