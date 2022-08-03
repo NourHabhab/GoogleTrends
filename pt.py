@@ -96,8 +96,8 @@ if menu_id == "1":
                 return None
             return r.json()
     
-        lottie_churn = load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_dhlmjljy.json")
-        st_lottie(lottie_churn, key = "churn", height = 200, width = 600)
+        lottie_google = load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_dhlmjljy.json")
+        st_lottie(lottie_google, key = "google", height = 200, width = 600)
 
     #This is a dictonary representing the code of the geoloction in google trends 
    
@@ -229,8 +229,8 @@ if menu_id == "2":
                 return None
             return r.json()
     
-        lottie_churn = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_HLo5AP.json")
-        st_lottie(lottie_churn, key = "churn", height = 200, width = 700)
+        lottie_countries = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_HLo5AP.json")
+        st_lottie(lottie_countries, key = "countries", height = 200, width = 700)
     
     #This is a dictonary representing the code of the geoloction in google trends 
     
@@ -421,12 +421,28 @@ if menu_id=="3":
     with row_spacer2:
             st.empty()
     
-    st.markdown(f"""
-                <h2>
-                    <h4 style="vertical-align:center;font-size:25px;color:#4285F4;padding-left:200px;padding-top:5px;margin-left:0em";>
-                    In this page, we will explore the trend of two keywords within a specific region over the past five years to analyze the trend and over the past year to further understand how to optimize our SEO/SEM
-                </h2>""",unsafe_allow_html = True)
+   
+    col1,col2,col3,col4=st.columns([6,0.2,0.2,4])
+    #Summary of what the page represents 
+    with col1:
+        st.markdown(f"""
+                    <h3>
+                        <h4 style="vertical-align:center;font-size:25px;color:#4285F4;padding-left:200px;padding-top:5px;margin-left:0em";>
+                         In this page, we will explore the trend of two keywords within a specific region to optimize our SEO.
+                    </h3>""",unsafe_allow_html = True)
+    #This is a dictonary representing the code of the geoloction in google trends 
+    with col4:
+        def load_lottieurl(url):
+
+                # get the url
+            r = requests.get(url)
+            # if error 200 raised return Nothing
+            if r.status_code !=200:
+                return None
+            return r.json()
     
+        lottie_SEO = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_d5xpsakx.json")
+        st_lottie(lottie_SEO, key = "SEO", height = 200, width = 500)
         
     pytrends=TrendReq(hl='en-Us')    
     placeholder=st.empty()
