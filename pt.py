@@ -64,7 +64,7 @@ if menu_id == "Google":
     col1,col2,col3=st.columns([7,0.1,0.1])
     with col1:
         image1=Image.open('Capture9.PNG')
-        st.image(image1,width=1600)
+        st.image(image1,width=1580)
 
 #Editing Second Page of automated scrapper 
         
