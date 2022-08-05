@@ -77,7 +77,7 @@ if menu_id == "1":
     with row_spacer2:
             st.empty()
              
-    col1,col2,col3,col4=st.columns([6,0.2,0.2,4])
+    col1,col2,col3,col4=st.columns([4,0.2,0.2,4])
     #Summary of what the page represents 
     with col1:
         st.markdown(f"""
@@ -97,7 +97,7 @@ if menu_id == "1":
             return r.json()
     
         lottie_google = load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_dhlmjljy.json")
-        st_lottie(lottie_google, key = "google", height = 200, width = 600)
+        st_lottie(lottie_google, key = "google", height = 200, width = 580)
 
     #This is a dictonary representing the code of the geoloction in google trends 
    
