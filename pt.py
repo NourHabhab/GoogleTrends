@@ -77,14 +77,14 @@ if menu_id == "1":
     with row_spacer2:
             st.empty()
              
-    col1,col2,col3,col4=st.columns([4,0,0,4])
+    col1,col2,col3,col4=st.columns([2,0.2,0.2,4])
     #Summary of what the page represents 
     with col1:
         st.markdown(f"""
-                    <h3>
+                    <h4>
                         <h4 style="vertical-align:center;font-size:25px;color:#4285F4;padding-left:200px;padding-top:5px;margin-left:0em";>
                         In this page, we will explore the trend of a single keyword within a specific region to optimize our SEO
-                    </h3>""",unsafe_allow_html = True)
+                    </h4>""",unsafe_allow_html = True)
     #This is a dictonary representing the code of the geoloction in google trends 
     with col4:
         def load_lottieurl(url):
