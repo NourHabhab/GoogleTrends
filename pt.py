@@ -65,8 +65,8 @@ if menu_id == "Google":
         
     col1,col2,col3=st.columns([7,0.1,0.1])
     with col1:
-        image1=Image.open('homecap.png')
-        st.image(image1,width=1650)
+        image1=Image.open('homecap.PNG')
+        st.image(image1,width=1500)
 
 #Editing Second Page of automated scrapper 
         
