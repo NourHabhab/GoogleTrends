@@ -65,17 +65,11 @@ if menu_id == "Google":
                 <h1 style="vertical-align:center;font-size:35px;padding-left:200px;color:#4285F4;padding-top:5px;margin-left:0em";>
                 Explore what the world is searching
             </h1>""",unsafe_allow_html = True)
-        
-    col1,col2,col3,col4,col5,col6=st.columns([1,1.3,1,1,1,1])
-    
-    with col3:
-        image1=Image.open('Capture1.PNG')
-        st.image(image1,width=600)
        
         
     col1,col2,col3=st.columns([7,0.1,0.1])
     with col1:
-        image1=Image.open('homecap.PNG')
+        image1=Image.open('homecap1.PNG')
         st.image(image1,width=1500)
 
 #Editing Second Page of automated scrapper 
