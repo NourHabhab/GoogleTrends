@@ -80,8 +80,8 @@ if menu_id == "Google":
                 return None
             return r.json()
     
-        lottie_google = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_dhlmjljy.json")
-        st_lottie(lottie_google, key = "google", height = 300, width = 900)
+            lottie_google = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_dhlmjljy.json")
+            st_lottie(lottie_google, key = "google", height = 300, width = 900)
         
     col1,col2,col3=st.columns([7,0.1,0.1])
     with col1:
