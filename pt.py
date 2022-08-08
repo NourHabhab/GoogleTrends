@@ -18,6 +18,12 @@ st.expander('Expander')
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
+# Load css style from url
+def remote_css(url):
+    st.markdown(f'<link href="{url}" rel="stylesheet">',unsafe_allow_html = True)
+
+# Load css style
+local_css('style.css')
 
 
 #creating menu data which will be used in navigation bar specifying the pages of the dashboard
