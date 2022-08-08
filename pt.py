@@ -62,7 +62,7 @@ if menu_id == "Google":
     with col2:
         st.markdown(f"""
             <h1>
-                <h1 style="vertical-align:center;font-size:35px;padding-left:200px;color:#4285F4;padding-top:5px;margin-left:0em";>
+                <h1 style="vertical-align:center;font-size:30px;padding-left:200px;color:#4285F4;padding-top:5px;margin-left:0em";>
                 Explore what the world is searching
             </h1>""",unsafe_allow_html = True)
        
