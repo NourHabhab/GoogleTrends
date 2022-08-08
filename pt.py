@@ -384,8 +384,7 @@ if menu_id == "3":
                     
             for key in countries2.keys():
                 if key==Choice3:
-                    st.header(countries2[key])
-                    st.header(type(countries2[key]))
+                    
                     pytrends=TrendReq(hl='en-Us') 
                     pytrends.build_payload(list, 
                                     cat=0, 
