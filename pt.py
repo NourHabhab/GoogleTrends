@@ -69,19 +69,9 @@ if menu_id == "Google":
     col1,col2,col3,col4,col5,col6=st.columns([1,1.3,1,1,1,1])
     
     with col3:
-#         image1=Image.open('Capture1.PNG')
-#         st.image(image1,width=600)
-          def load_lottieurl(url):
-
-                # get the url
-            r = requests.get(url)
-            # if error 200 raised return Nothing
-            if r.status_code !=200:
-                return None
-            return r.json()
-    
-            lottie_google = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_dhlmjljy.json")
-            st_lottie(lottie_google, key = "google", height = 300, width = 900)
+        image1=Image.open('Capture1.PNG')
+        st.image(image1,width=600)
+       
         
     col1,col2,col3=st.columns([7,0.1,0.1])
     with col1:
