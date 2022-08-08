@@ -15,6 +15,9 @@ import requests
 #Layout 
 st.set_page_config(layout="wide", page_icon = "https://cdn-icons-png.flaticon.com/512/2702/2702602.png", page_title = "Google Trends")
 st.expander('Expander') 
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
 
 
 #creating menu data which will be used in navigation bar specifying the pages of the dashboard
